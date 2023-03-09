@@ -1,14 +1,19 @@
-@import "mixins/banner";
+@import "./bootstrap-5.2.3/bootstrap-scss/mixins/banner";
 @include bsBanner("");
 
 
 // scss-docs-start import-stack
 // Configuration
-@import "functions";
-@import "variables";
-@import "maps";
-@import "mixins";
-@import "utilities";
+//qui vanno le override function
+@import "./bootstrap-5.2.3/bootstrap-scss/functions";
+
+//qui vanno le override variable
+@import "./bootstrap-5.2.3/bootstrap-scss/variables";
+
+//qui vanno le override maps
+@import "./bootstrap-5.2.3/bootstrap-scss/maps";
+@import "./bootstrap-5.2.3/bootstrap-scss/mixins";
+@import "./bootstrap-5.2.3/bootstrap-scss/utilities";
 
 // Layout & components
 @import "./bootstrap-5.2.3/bootstrap-scss/reboot";
@@ -43,8 +48,8 @@
 @import "./bootstrap-5.2.3/bootstrap-scss/placeholders";
 
 // Helpers
-@import "helpers";
+@import "./bootstrap-5.2.3/bootstrap-scss/helpers";
 
 // Utilities
-@import "utilities/api";
+@import "./bootstrap-5.2.3/bootstrap-scss/utilities/api";
 // scss-docs-end import-stack
